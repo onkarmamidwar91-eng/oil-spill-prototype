@@ -38,8 +38,9 @@ export default function MapView({ scenario, result }) {
     <MapContainer center={[scenario.region.center.lat, scenario.region.center.lon]} zoom={9} style={{ height: '100%', width: '100%' }} zoomControl={true} attributionControl={true}>
       <FitBounds bounds={bounds} />
       <TileLayer
-        url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-        attribution='&copy; OpenStreetMap contributors &copy; CARTO'
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        className="dark-tiles"
       />
 
       {/* Drift uncertainty ensemble */}

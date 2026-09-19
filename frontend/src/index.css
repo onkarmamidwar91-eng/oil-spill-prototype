@@ -68,6 +68,12 @@ a { color: var(--teal); }
 }
 .leaflet-control-attribution a { color: var(--text-secondary) !important; }
 
+/* Invert standard OSM tiles into a dark theme (no paid/keyed dark tile
+   provider needed). */
+.dark-tiles {
+  filter: invert(1) hue-rotate(180deg) brightness(0.95) contrast(0.9);
+}
+
 @media (prefers-reduced-motion: reduce) {
   * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }
