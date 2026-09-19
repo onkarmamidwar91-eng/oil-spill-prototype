@@ -1,0 +1,58 @@
+{
+  "scenarios": [
+    {
+      "id": "arabian-sea-14mar",
+      "label": "Arabian Sea \u2014 14 Mar 2026, 05:12 UTC",
+      "satellite": "Sentinel-1A (IW, VV+VH)",
+      "detected_at": "2026-03-14T05:12:00Z",
+      "region": {
+        "center": {"lat": 18.55, "lon": 69.55},
+        "bbox": [[18.05, 68.95], [19.10, 70.15]]
+      },
+      "slick": {
+        "centroid": {"lat": 18.44, "lon": 69.43},
+        "length_km": 11.2,
+        "area_km2": 3.6,
+        "orientation_deg": 205,
+        "confidence": 0.87,
+        "lookalike_risk": "low",
+        "notes": "Elongated low-backscatter feature, wind 4-6 m/s (below 7 m/s look-alike threshold)."
+      },
+      "environment": {
+        "wind_kt": 9,
+        "wind_dir_deg": 230,
+        "current_kt": 0.6,
+        "current_dir_deg": 195,
+        "sea_state": "calm-moderate"
+      },
+      "true_origin_hint": {"lat": 18.415, "lon": 69.405, "t": "2026-03-14T04:35:00Z"}
+    },
+    {
+      "id": "gulf-of-kutch-02jun",
+      "label": "Gulf of Kutch \u2014 02 Jun 2026, 14:47 UTC",
+      "satellite": "Sentinel-1B (IW, VV)",
+      "detected_at": "2026-06-02T14:47:00Z",
+      "region": {
+        "center": {"lat": 22.48, "lon": 69.10},
+        "bbox": [[22.05, 68.55], [22.95, 69.65]]
+      },
+      "slick": {
+        "centroid": {"lat": 22.40, "lon": 69.02},
+        "length_km": 6.4,
+        "area_km2": 1.8,
+        "orientation_deg": 140,
+        "confidence": 0.79,
+        "lookalike_risk": "medium",
+        "notes": "Moderate confidence; light biogenic slick nearby flagged and excluded by confidence filter."
+      },
+      "environment": {
+        "wind_kt": 12,
+        "wind_dir_deg": 300,
+        "current_kt": 0.9,
+        "current_dir_deg": 260,
+        "sea_state": "moderate"
+      },
+      "true_origin_hint": {"lat": 22.365, "lon": 68.955, "t": "2026-06-02T13:50:00Z"}
+    }
+  ]
+}

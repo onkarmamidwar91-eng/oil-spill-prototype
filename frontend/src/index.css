@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --bg-void: #0a0e15;
+  --bg-panel: #10161f;
+  --bg-panel-raised: #161e2b;
+  --line: #232d3d;
+  --line-bright: #33435a;
+  --text-primary: #e8edf5;
+  --text-secondary: #8fa0b8;
+  --text-faint: #5b6b83;
+  --teal: #34d1c4;
+  --teal-dim: #1a3d3a;
+  --amber: #e8a23d;
+  --amber-dim: #4a3a1e;
+  --red: #e8613d;
+  --red-dim: #4a231a;
+  --font-ui: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'SF Mono', monospace;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--bg-void);
+  color: var(--text-primary);
+  font-family: var(--font-ui);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--teal-dim);
+  color: var(--teal);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+a { color: var(--teal); }
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--bg-panel); }
+::-webkit-scrollbar-thumb { background: var(--line-bright); border-radius: 5px; }
+
+.mono { font-family: var(--font-mono); }
+
+.leaflet-container {
+  background: #0d1420 !important;
+  font-family: var(--font-ui);
+}
+.leaflet-popup-content-wrapper {
+  background: var(--bg-panel-raised);
+  color: var(--text-primary);
+  border: 1px solid var(--line-bright);
+  border-radius: 6px;
+}
+.leaflet-popup-tip { background: var(--bg-panel-raised); }
+.leaflet-control-attribution {
+  background: rgba(10,14,21,0.7) !important;
+  color: var(--text-faint) !important;
+}
+.leaflet-control-attribution a { color: var(--text-secondary) !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
